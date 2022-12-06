@@ -1,0 +1,70 @@
+#resume {
+    padding: 60px;
+}
+
+.resume-item {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    padding: 10px;
+}
+
+.resume-item::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 2px;
+    width: 2px;
+    height: 100%;
+    background-color:#1f5297;
+}
+
+.resume-item::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -5.5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #1f5297;
+    background-color: #fff;
+}
+
+.resume-item-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 450;
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    height: 30px;
+    padding: 2px;
+    margin: 10px 0;
+    width: 25%;
+    background: #e4edf9;
+}
+
+.resume-category-title {
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #212431;
+}
+
+.resume-item-title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.resume-item-tick {
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary);
+    margin-right: 2px;
+}

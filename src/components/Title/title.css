@@ -1,0 +1,14 @@
+.section-title{
+    font-size: 32px;
+    color: var(--title);
+    text-align: left;
+    font-weight: bold;
+}
+
+.underline {
+    height: 4px;
+    width: 5rem;
+    background-color: var(--primary);
+    display: block;
+    margin: 0.5rem 0;
+  }

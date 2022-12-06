@@ -1,0 +1,14 @@
+.toggle-menu-button {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 9999;
+    border: 0px;
+    font-size: 1.3rem;    
+    padding: 7px 10px;
+}
+
+.toggle-menu-button:focus {
+    outline: none!important;
+    box-shadow: none!important;
+}

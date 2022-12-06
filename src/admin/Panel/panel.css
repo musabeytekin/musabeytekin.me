@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+#admin-dashboard {
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+.admin-page {
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+}
+.admin-menu {
+    background: #101827;
+    height: 100vh;
+    width: 20vw;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: all 1.5s;
+}
+
+.admin-menu h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.admin-menu nav {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+}
+
+.admin-menu__item {
+    display: flex;
+    align-items: center;
+    padding: 0 1.7rem;
+    column-gap: 1.3rem;
+    color: rgba(255, 255, 255, 0.5);
+    height: 2.5rem;
+    transition: all 0.2s;
+}
+
+.admin-menu__item:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.3);
+
+}
+
+.admin-menu__item--icon {
+    font-size: 5rem;
+}
+
+.admin-menu__item--active {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-left: 2px solid #fff;
+}
+
+.content {
+    background-color:rgba(186, 185, 185, 0.3);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-header {
+    background-color: #fff;
+    height: 10.2%; 
+    border-bottom: 5px solid #5046e5;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.content-header-menu-icon {
+    color: #5046e5;
+    font-size: 1.7rem;
+    margin-left: 10px;
+    padding: 5px;
+    height: 50%;
+    width: 2rem;
+    border-radius: 50%;
+}
+.content-header nav {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    column-gap: 1.2rem;
+    width: 25%;
+    height: 100%;
+    margin-right: 1.5rem;
+}
+
+.content-header nav * {
+    width: 15%;
+    height: 50%;
+    background-color: #5046e5;
+    border-radius: 50%;
+    padding: .4rem;
+
+}
+
+.menu-unhover {
+    width: 5vw !important;
+}
+
+
+
+.menu-hover {
+    width: 95vw !important;
+}
+
+
+
+
+

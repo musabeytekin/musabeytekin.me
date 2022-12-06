@@ -4,6 +4,7 @@ import Title from "../../components/Title";
 import { MdSupervisorAccount } from "react-icons/md";
 import { BsShieldLockFill } from "react-icons/bs";
 import { useEffect } from "react";
+import adminJpg from "./admin.jpg"
 const Index = () => {
   useEffect(() => {
     document.title = "Admin Login";
@@ -50,7 +51,7 @@ const Index = () => {
             </div>
           </div>
           <div className="col-md-6 col-sm-12 ">
-            <img src="./admin.jpg" alt="" className="admin-img" />
+            <img src={adminJpg} alt="" className="admin-img" />
           </div>
         </div>
       </div>

@@ -8,6 +8,7 @@ import { Provider } from "react-redux";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AdminLogin from "./admin/Login";
 import AdminPanel from "./admin/Panel";
+import AdminDashboard from "./admin/Panel/Dashboard";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
@@ -17,7 +18,9 @@ root.render(
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/admin" element={<AdminLogin/>} />
-          <Route path="/admin/dashboard" element={<AdminPanel/>} />
+          <Route path="/admin/panel" element={<AdminPanel/>}> 
+            <Route path="dashboard" element= {<AdminDashboard/>}/>
+          </Route>
         </Routes>
       </BrowserRouter>
     </Provider>

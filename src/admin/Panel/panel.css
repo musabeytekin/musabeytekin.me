@@ -7,6 +7,7 @@
   font-family: "Inter", sans-serif;
   height: 100vh;
   width: 100vw;
+  background-color: rgba(186, 185, 185, 0.3);
 }
 .admin-page {
   display: flex;
@@ -15,13 +16,17 @@
 }
 .admin-menu {
   background: var(--admin-secondary);
-  height: 100vh;
+  height: 96vh;
   width: 20vw;
   color: #fff;
   display: flex;
+  align-self: center;
   align-items: center;
   flex-direction: column;
   transition: all 1.5s;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
 }
 
 .admin-menu h1 {
@@ -32,9 +37,9 @@
 .admin-menu nav {
   display: flex;
   flex-direction: column;
-  row-gap: 1rem;
+  margin-top: 100px;
+  row-gap: 2rem;
   padding: 0;
-  margin: 0;
   width: 100%;
 }
 .admin-menu {
@@ -54,6 +59,11 @@
 .admin-menu:hover span {
   display: block;
 }
+
+.admin-menu:hover .admin-menu__item {
+  height: 2.5rem;
+  padding: 0 4px;
+}
 .content-header nav > * {
   width: 25%;
   height: 70%;
@@ -62,19 +72,28 @@
   padding: 0.2rem;
 }
 
+.nav-icon {
+  padding-left: 4px;
+}
+
 .admin-menu__item {
   display: flex;
   align-items: center;
-  padding: 0 1.7rem;
+  /* padding: 0 1.7rem; */
   column-gap: 1.3rem;
   color: rgba(255, 255, 255, 0.5);
-  height: 2.5rem;
+  height: 1.7rem;
+
   transition: all 0.2s;
+  border-radius: 10px;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .admin-menu__item:hover {
   color: #fff;
   background-color: rgba(255, 255, 255, 0.3);
+  /* background-color: red; */
 }
 
 .admin-menu__item--icon {
@@ -85,11 +104,10 @@
 .admin-menu__item--active {
   color: #fff;
   background-color: rgba(255, 255, 255, 0.3);
-  border-left: 2px solid #fff;
+  /* background-color: red; */
 }
 
 .content {
-  background-color: rgba(186, 185, 185, 0.3);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -111,7 +129,7 @@
 }
 
 .content-header {
-  padding: .7rem;
+  padding: 0.7rem;
   background-color: #fff;
   height: 10.2%;
   border: 3px solid var(--admin-primary);

@@ -43,29 +43,29 @@ const Index = () => {
         <div
           className="admin-menu w-20"
         >
-          <nav className="mt-5">
+          <nav>
             <Link
-              to="/admin/dashboard"
+              to="/admin/panel/dashboard"
               className="admin-menu__item admin-menu__item--active"
               onClick={handleClick}
             >
-              <RxDashboard />
+              <RxDashboard className="nav-icon"/>
               <span>Dashboard</span>
             </Link>
             <Link
-              to="/admin/dashboard"
+              to="/admin/panel/dashboard"
               className="admin-menu__item"
               onClick={handleClick}
             >
-              <RxDashboard />
+              <RxDashboard className="nav-icon"/>
               <span>Dashboard</span>
             </Link>
             <Link
-              to="/admin/dashboard"
+              to="/admin/panel/dashboard"
               className="admin-menu__item"
               onClick={handleClick}
             >
-              <RxDashboard />
+              <RxDashboard className="nav-icon"/>
               <span>Dashboard</span>
             </Link>
           </nav>

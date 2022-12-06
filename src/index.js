@@ -5,7 +5,8 @@ import "./index.css";
 import Home from "./Home";
 import store from "./redux/store";
 import { Provider } from "react-redux";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Router} from "react-router-dom";
+import { StaticRouter } from "react-router-dom/server";
 import AdminLogin from "./admin/Login";
 import AdminPanel from "./admin/Panel";
 import AdminDashboard from "./admin/Panel/Dashboard";
@@ -17,9 +18,9 @@ root.render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/admin" element={<AdminLogin/>} />
-          <Route path="/admin/panel" element={<AdminPanel/>}> 
-            <Route path="dashboard" element= {<AdminDashboard/>}/>
+          <Route path="/admin" element={<AdminLogin />} />
+          <Route path="/admin/panel" element={<AdminPanel />}>
+            <Route path="dashboard" element={<AdminDashboard />} />
           </Route>
         </Routes>
       </BrowserRouter>

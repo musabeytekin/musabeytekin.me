@@ -19,6 +19,9 @@ const Index = () => {
     setActive(e.currentTarget);
   };
 
+
+
+
   // useEffect(() => {
   //   const adminMenu = document.querySelector(".admin-menu");
   //   const content = document.querySelector(".content");
@@ -39,9 +42,9 @@ const Index = () => {
 
   return (
     <main id="admin-dashboard">
-      <div className="admin-page">
+        
         <div
-          className="admin-menu w-20"
+          className="admin-menu"
         >
           <nav>
             <Link
@@ -71,7 +74,6 @@ const Index = () => {
           </nav>
         </div>
         
-        
         <div
           className="content"
         >
@@ -86,7 +88,6 @@ const Index = () => {
             <Outlet />
           </div>
         </div>
-      </div>
     </main>
   );
 };

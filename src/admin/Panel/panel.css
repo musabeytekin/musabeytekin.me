@@ -5,19 +5,13 @@
 }
 #admin-dashboard {
   font-family: "Inter", sans-serif;
-  height: 100vh;
-  width: 100vw;
   background-color: rgba(186, 185, 185, 0.3);
 }
-.admin-page {
-  display: flex;
-  height: 100%;
-  width: 100%;
-}
+
 .admin-menu {
   background: var(--admin-secondary);
   height: 96vh;
-  width: 20vw;
+  width: 4vw;
   color: #fff;
   display: flex;
   align-self: center;
@@ -26,7 +20,11 @@
   transition: all 1.5s;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  overflow: hidden;
+  transition: all 0.3s ease-out;
+  position: fixed;
+  z-index: 9999;
+  top: 1rem;
+
 }
 
 .admin-menu h1 {
@@ -42,18 +40,17 @@
   padding: 0;
   width: 100%;
 }
-.admin-menu {
-  width: 5vw;
-  transition: all 0.3s ease-out;
-}
+
 .admin-menu:hover {
   width: 20vw;
-  overflow: hidden;
+}
+.admin-menu:hover .content {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .admin-menu span {
   display: none;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .admin-menu:hover span {
@@ -72,7 +69,6 @@
   padding: 0.2rem;
 }
 
-
 .admin-menu__item {
   display: flex;
   align-items: center;
@@ -90,7 +86,7 @@
 
 .admin-menu__item:hover {
   color: #fff;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.45);
   /* background-color: red; */
 }
 
@@ -102,14 +98,14 @@
 .admin-menu__item--active {
   color: #fff;
   background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid #fff;
 }
 
 .content {
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  width: 95vw;
   padding: 1rem;
+  padding-left: 5vw;
 }
 
 .content-card {
@@ -118,7 +114,7 @@
   background-color: #fff;
   padding: 1.2rem;
   margin-bottom: 1rem;
-  height: 12rem;
+  /* height: 12rem; */
 }
 
 .content-body {
@@ -128,7 +124,7 @@
 .content-header {
   padding: 0.7rem;
   background-color: #fff;
-  height: 10.2%;
+  min-height: 5rem;
   border: 3px solid var(--admin-primary);
   display: flex;
   align-items: center;
@@ -142,15 +138,7 @@
   font-family: Arial, Helvetica, sans-serif;
   color: var(--admin-primary);
 }
-/* .content-header-menu-icon {
-  color: var(--admin-primary);
-  font-size: 1.7rem;
-  margin-left: 10px;
-  padding: 5px;
-  height: 50%;
-  width: 2rem;
-  border-radius: 50%;
-} */
+
 .content-header nav {
   display: flex;
   align-items: center;
@@ -162,34 +150,22 @@
 }
 
 .content-header nav * {
-  width: 16%;
-  height: 90%;
+  width: 15%;
+  height: 3rem;
   background-color: var(--admin-primary);
   border-radius: 50%;
   padding: 0.4rem;
 }
 
-/* .menu-unhover {
-  width: 5vw !important;
-}
-
-.menu-hover {
-  width: 95vw !important;
-} */
-
 .card-info {
   display: flex;
-  column-gap: 1.5rem;
+  /* column-gap: 1.5rem; */
+  /* row-gap: 1.5rem; */
   align-items: center;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
-/* .content-card-img {
-    width: calc(50%);
-    height: calc(50%);
-    border-radius: 50%;
-} */
 
 .img-card {
   width: 70px;
@@ -231,3 +207,89 @@
   font-size: 1rem;
   font-weight: 450;
 }
+
+.messages-table {
+  width: 100%;
+  border-collapse: separate !important;
+  overflow: hidden;
+  border-spacing: 0;
+  padding: 0 !important;
+}
+
+.messages-table th,
+.messages-table td {
+  padding: 0.7rem 1.5rem;
+  border-bottom: 1.5px solid #e5e5e5;
+
+}
+
+.messages-table thead {
+  background-color: #f5f5f5;
+}
+
+
+td.name {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.messages-table thead tr th {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgba(55, 65, 81, 0.7);
+  text-transform: uppercase;
+}
+
+td.name > div :first-child {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+td.name > div :last-child {
+  font-size: 0.8rem;
+  color: rgba(55, 65, 81, 0.7);
+}
+
+td.name img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  justify-self: center;
+  object-fit: cover;
+}
+
+td.message-title {
+  font-size: 0.9rem;
+  color: rgba(17, 24, 39, 0.8);
+}
+
+.badge-status {
+  color: rgba(17, 24, 39, 0.7);
+  padding: 0.4rem;
+  border-radius: 9999px;
+  font-weight: 600;
+}
+
+.badge-status::first-letter {
+  text-transform: uppercase;
+}
+
+.bg-answered {
+  background-color: #d1fae5;
+}
+.bg-notanswered {
+  background-color: #d1d6dc;
+}
+
+.btn-view {
+  color:rgb(79,70,229);
+  font-weight: 450;
+}
+
+.btn-view:hover {
+  color:rgb(36, 25, 240);
+}
+
+

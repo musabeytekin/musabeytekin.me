@@ -19,25 +19,13 @@ const Index = () => {
     setActive(e.currentTarget);
   };
 
-
-
-
-  // useEffect(() => {
-  //   const adminMenu = document.querySelector(".admin-menu");
-  //   const content = document.querySelector(".content");
-  //   console.log("useeffect launced", isMenuOpen);
-  //   if (adminMenu.style.display === "none" && !isMenuOpen) {
-  //     adminMenu.style.display = "flex";
-  //     content.style.width = "80vw";
-  //   } else if (adminMenu.style.display === "flex" && isMenuOpen) {
-  //     setTimeout(() => {
-  //       adminMenu.style.display = "none";
-  //       content.style.width = "100vw";
-  //     }, 600);
-  //   }
-  // }, [isMenuOpen]);
   useEffect(() => {
     document.title = "Admin Dashboard";
+    console.log(document);
+    const html = document.querySelector("html");
+    console.log(html.style.background= "#e5e5e5");
+    document.body.style.background = "transparent";
+
   }, []);
 
   return (
@@ -48,7 +36,7 @@ const Index = () => {
         >
           <nav>
             <Link
-              to="/admin/panel/dashboard"
+              to="/admin/panel/"
               className="admin-menu__item admin-menu__item--active"
               onClick={handleClick}
             >
@@ -56,7 +44,7 @@ const Index = () => {
               <span>Dashboard</span>
             </Link>
             <Link
-              to="/admin/panel/dashboard"
+              to="/admin/panel/"
               className="admin-menu__item"
               onClick={handleClick}
             >
@@ -64,7 +52,7 @@ const Index = () => {
               <span>Dashboard</span>
             </Link>
             <Link
-              to="/admin/panel/dashboard"
+              to="/admin/panel/"
               className="admin-menu__item"
               onClick={handleClick}
             >

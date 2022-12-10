@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route} from "react-router-dom";
 import AdminLogin from "./admin/Login";
 import AdminPanel from "./admin/Panel";
 import AdminDashboard from "./admin/Panel/Dashboard";
+import Message from './admin/Panel/Message';
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
@@ -16,10 +17,11 @@ root.render(
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/admin" element={<AdminLogin />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/admin" element={<AdminLogin />} />
           <Route path="/admin/panel" element={<AdminPanel />}>
-            <Route path="dashboard" element={<AdminDashboard />} />
+            <Route path="" element={<AdminDashboard />} />
+            <Route path="message" element={<Message/>} />
           </Route>
         </Routes>
       </BrowserRouter>

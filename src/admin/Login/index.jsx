@@ -1,10 +1,10 @@
 import React from "react";
 import "./login.css";
 import Title from "../../components/Title";
-import { MdSupervisorAccount } from "react-icons/md";
-import { BsShieldLockFill } from "react-icons/bs";
+
 import { useEffect } from "react";
 import adminJpg from "./admin.jpg"
+import LoginForm from "./LoginForm";
 const Index = () => {
   useEffect(() => {
     document.title = "Admin Login";
@@ -19,35 +19,8 @@ const Index = () => {
               <div className="mb-3">
                 <Title underline={false}>Admin Panel</Title>
               </div>
-
-              <form>
-                <div className="form-group">
-                  <label htmlFor="textEmail">Email</label>
-                  <div className="d-flex align-items-center justify-content-center">
-                    <MdSupervisorAccount className="login-icon" />
-                    <input
-                      type="email"
-                      className="form-control"
-                      id="textEmail"
-                    />
-                  </div>
-                </div>
-                <div className="form-group">
-                  <label htmlFor="textPassword">Password</label>
-                  <div className="d-flex align-items-center justify-content-center">
-                    <BsShieldLockFill className="login-icon login-icon-lock" />
-                    <input
-                      type="password"
-                      className="form-control"
-                      id="textPassword"
-                    />
-                  </div>
-                </div>
-                <button type="submit" className="btn btn-primary">
-                  <BsShieldLockFill className="btn-login-icon"/>
-                  Login
-                </button>
-              </form>
+              <LoginForm />
+             
             </div>
           </div>
           <div className="col-md-6 col-sm-12 ">

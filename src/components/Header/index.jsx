@@ -26,7 +26,6 @@ const Index = () => {
       >
         <img
           className="profile-img img-fluid mt-3 rounded-circle"
-          src={"./profile-img.jpeg"}
           alt=""
         />
         <a href="/" className="profile-name">

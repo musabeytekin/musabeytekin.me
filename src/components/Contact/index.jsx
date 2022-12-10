@@ -4,19 +4,9 @@ import Title from "../Title";
 import { SlLocationPin } from "react-icons/sl";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { useFormik } from "formik";
+import ContactForm from "./ContactForm";
 const Index = () => {
-  const formik = useFormik({
-    initialValues: {
-      email: "",
-      name: "",
-      subject: "",
-      message: ""
-    },
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
-    }
-  });
+
   return (
     <section id="contact" className="container">
       <Title underline={true}>Contact</Title>
@@ -28,7 +18,7 @@ const Index = () => {
       </p>
 
       <div className="row">
-        <div className="col-lg-5 col-sm-12 mb-4">
+        <div className="col-lg-5 col-sm-12">
           <div className="info">
             <div className="info-item">
               <SlLocationPin className="info-icon" />
@@ -60,69 +50,7 @@ const Index = () => {
         </div>
         <div className="col-lg-7 col-sm-12">
           <div className="contact-form">
-            <form onSubmit={formik.handleSubmit}>
-              <div className="row">
-                <div className="col-md-6 col-sm-12">
-                  <div className="form-group">
-                    <label>Your Name</label>
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="formName"
-                      aria-describedby="nameHelp"
-                      onChange={formik.handleChange}
-                      value={formik.values.email}
-                    />
-                  </div>
-                </div>
-                <div className="col-md-6 col-sm-12">
-                  <div className="form-group">
-                    <label>Your Email</label>
-                    <input
-                      type="email"
-                      className="form-control"
-                      id="formEmail"
-                      aria-describedby="nameHelp"
-                      onChange={formik.handleChange}
-                      value={formik.values.email}
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-md-12 col-sm-12">
-                  <div className="form-group">
-                    <label>Subject</label>
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="formSubject"
-                      onChange={formik.handleChange}
-                      value={formik.values.email}
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-md-12 col-sm-12">
-                  <div className="form-group">
-                    <label>Message</label>
-                    <textarea
-                      className="form-control"
-                      id="formMessage"
-                      rows="10"
-                      onChange={formik.handleChange}
-                      value={formik.values.email}
-                    ></textarea>
-                  </div>
-                </div>
-              </div>
-              <div className="button-wrap">
-                <button type="submit" className="btn btn-primary">
-                  Send Message
-                </button>
-              </div>
-            </form>
+            <ContactForm />
           </div>
         </div>
       </div>

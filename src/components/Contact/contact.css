@@ -8,8 +8,8 @@
   justify-content: center;
   align-items: left;
   gap: 2.5rem;
+  height: 100%;
   padding: 1.2rem;
-  height: 70vh;
   box-shadow: 0 0 2.5rem 0 rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
 }
@@ -72,6 +72,17 @@ form .button-wrap {
     justify-content: center;
 }
 
+form .button-wrap .btn {
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
 #contact .btn.btn-primary{
     background-color: var(--title);
     border-color: var(--title);
@@ -80,7 +91,6 @@ form .button-wrap {
    opacity: 0.78;
 }
 .contact-form {
-    height: 70vh;
     padding: 1.5rem;
     box-shadow: 0 0 2.5rem 0 rgba(0, 0, 0, 0.1);
 }

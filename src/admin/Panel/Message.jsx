@@ -1,9 +1,8 @@
 import React from "react";
 import userIcon from "./user.png";
 import { HiOutlineChevronRight } from "react-icons/hi";
-import { useFormik } from "formik";
 import AnswerForm from "./AnswerForm";
-const Message = () => {
+const Message = ({ message }) => {
   return (
     <div className="row content-section">
       <div className="col-sm-12 col-md-6 mh-50vh">
@@ -35,7 +34,6 @@ const Message = () => {
       </div>
       <div className="col-sm-12 col-md-6 mh-50vh">
         <div className="content-card h-100 answer-area-wrap">
-      
           <AnswerForm />
         </div>
       </div>

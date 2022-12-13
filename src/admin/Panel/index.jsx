@@ -8,6 +8,7 @@ import notificationicon from "./notification.png";
 import NotificationMenu from "./NotificationMenu";
 import { BiLogOut } from "react-icons/bi";
 import OutsideClickHandler from "react-outside-click-handler";
+import { BsChevronLeft } from "react-icons/bs";
 const Index = () => {
   const testNotifications = [
     {
@@ -50,35 +51,7 @@ const Index = () => {
 
   return (
     <main id="admin-dashboard">
-      <div className="admin-menu">
-        <nav>
-          <Link
-            to="/admin/panel/"
-            className="admin-menu__item admin-menu__item--active"
-            onClick={handleClick}
-          >
-            <RxDashboard className="nav-icon" />
-            <span>Dashboard</span>
-          </Link>
-          <Link
-            to="/admin/panel/"
-            className="admin-menu__item"
-            onClick={handleClick}
-          >
-            <RxDashboard className="nav-icon" />
-            <span>Dashboard</span>
-          </Link>
-          <Link
-            to="/admin/panel/"
-            className="admin-menu__item"
-            onClick={handleClick}
-          >
-            <RxDashboard className="nav-icon" />
-            <span>Dashboard</span>
-          </Link>
-        </nav>
-      </div>
-
+    
       <div className="content">
         <header className="content-header content-card">
           <h2 className=""> Welcome to Admin Panel...</h2>

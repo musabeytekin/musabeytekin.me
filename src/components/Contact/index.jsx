@@ -6,15 +6,12 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import ContactForm from "./ContactForm";
 const Index = () => {
-
   return (
     <section id="contact" className="container">
       <Title underline={true}>Contact</Title>
       <p>
-        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-        aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-        quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
-        sit in iste officiis commodi quidem hic quas.
+        To contact me, you can fill out the form below, call my phone number,
+        reach me via WhatsApp or send an e-mail.
       </p>
 
       <div className="row">
@@ -43,9 +40,7 @@ const Index = () => {
               </div>
             </div>
 
-            <iframe
-              src="https://maps.google.com/maps?q=44210&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            ></iframe>
+            <iframe src="https://maps.google.com/maps?q=44210&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
           </div>
         </div>
         <div className="col-lg-7 col-sm-12">

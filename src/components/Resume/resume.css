@@ -40,11 +40,16 @@
     font-weight: 450;
     margin-bottom: 10px;
     font-family: 'Raleway', sans-serif;
-    height: 30px;
+    /* height: 30px; */
     padding: 2px;
     margin: 10px 0;
-    width: 25%;
     background: #e4edf9;
+}
+
+@media (max-width: 768px) {
+    .resume-item-date {
+        width: unset;
+    }
 }
 
 .resume-category-title {

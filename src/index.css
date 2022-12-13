@@ -5,6 +5,10 @@
   --bg-section: #f5f8fd;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
   list-style: none;
   padding: 0;

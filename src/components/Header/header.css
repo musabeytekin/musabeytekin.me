@@ -1,6 +1,18 @@
 @media (max-width: 768px) {
   .profile{
-    width: 60vw !important;
+    min-width: 40vw !important;
+  }
+}
+
+@media (max-width: 1168px) {
+  .profile {
+    min-width: 30vw !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .profile {
+    min-width: 56vw !important;
   }
 }
 
@@ -9,7 +21,7 @@
 
 .profile {
   position: fixed;
-  width: 25vw;
+  width: 18vw;
   height: 100vh;
   background-color: var(--secondary);
   display: flex;
@@ -22,12 +34,13 @@
   border: 8px solid #2c2f3f;
   width: 120px;
   height: 120px;
+  object-fit: cover;
 }
 .profile-social {
   display: flex;
   justify-content: space-between;
   width: 85%;
-  padding: 0 20px;
+  padding: 10px 20px;
 }
 
 .profile-social-icon {
@@ -35,7 +48,7 @@
   color: #fff;
   background: #212431;
   border-radius: 50%;
-  padding: 8px 0;
+  padding: 9px;
   width: 36px;
   height: 36px;
   transition: 0.3s;

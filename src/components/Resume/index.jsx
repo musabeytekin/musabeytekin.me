@@ -7,33 +7,36 @@ const Index = () => {
     {
       title: "Education",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      attributes: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      ],
-      start: "2010",
-      end: "2015"
+        "General Eşref Bitlis Anatolian High School Inonu University Computer Engineering",
+   
+      start: "2015",
+      end: "2023"
     },
     {
       title: "Experience",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Bera Software Corporation, Cyber Security and Web Development Specialist (Intern)",
       attributes: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      ]
+        "I participated in penetration tests. I have increased my knowledge on these subjects.",
+        "I have prepared a comprehensive document about security vulnerabilities in web services.",
+        "I have gained experience in preparing penetration test reports. I increased my communication skills in the corporate field by communicating with customers personally.",
+        "I have gained experience in web development. HTML CSS"
+      ],
+      start: "2022 July",
+      end: "2022 August"
     },
     {
-      title: "Awards",
+      title: "Certifications",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "I got many course certificates in the field of cyber security , web development etc.",
       attributes: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "Web penetration testing course certificate (Udemy)",
+        "Network penetration tests, vulnerabilities (Udemy)",
+        "Penetration tests, vulnerabilities (Udemy)",
+        "API secrutiy (Udemy)",
+        "Data science, Machine Learning Education with Python (Udemy)",
+        "Web development course certificate (Udemy)",
+        "Python course certificate (Udemy)",
       ]
     }
   ];
@@ -42,21 +45,17 @@ const Index = () => {
     <section id="resume" className="container">
       <Title underline={true}>Resume</Title>
       <p>
-        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-        aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-        quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
-        sit in iste officiis commodi quidem hic quas.
+        In this section, you can find information about my education and work
+        experience in software engineering.
       </p>
       <div className="resume-category-title">Sumary</div>
-      <div className="row d-flex gap-5">
+      <div className="row gap-5">
         {resumeItems.map((resumeItem, index) => (
           <div className="col-lg-6 col-sm-12 " key={index}>
-
-           <ResumeItem {...resumeItem} />
+            <ResumeItem {...resumeItem} />
           </div>
         ))}
       </div>
-
     </section>
   );
 };

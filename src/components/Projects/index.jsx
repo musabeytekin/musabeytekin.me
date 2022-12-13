@@ -2,31 +2,20 @@ import React from "react";
 
 import Title from "../Title";
 import ProjectItem from "./ProjectItem";
+import { projects } from "./projectItems";
 import "./projects.css";
 const Index = () => {
   return (
     <section id="projects" className="container">
       <Title underline={true}>Projects</Title>
       <p>
-        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-        aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-        quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
-        sit in iste officiis commodi quidem hic quas.
+        I work every day to improve myself. I have developed many projects with
+        MongoDB, PostgreSQL, ExpressJS, NodeJS, ReactJS technologies. You can
+        review my projects.
       </p>
-      <div className="row">
-        <div className="col-lg-4 col-md-6 col-sm-12">
-          <ProjectItem />
-        </div>
-        <div className="col-lg-4 col-md-6 col-sm-12">
-          <ProjectItem />
-        </div>
-        <div className="col-lg-4 col-md-6 col-sm-12">
-          <ProjectItem />
-        </div>
-        <div className="col-lg-4 col-md-6 col-sm-12">
-          <ProjectItem />
-        </div>
-      </div>
+      {projects.map((project, index) => (
+        <ProjectItem {...project} key={index} />
+      ))}
     </section>
   );
 };

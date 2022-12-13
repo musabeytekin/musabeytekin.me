@@ -1,7 +1,10 @@
 #contact {
   padding: 60px;
 }
-
+@media (max-width: 768px) {
+  #contact {
+  }
+}
 .info {
   display: flex;
   flex-direction: column;
@@ -22,6 +25,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 1.7rem;
+  overflow-wrap: anywhere;
 }
 
 .info-text span {
@@ -89,6 +93,10 @@ form .button-wrap .btn {
 }
 #contact .btn.btn-primary:hover{
    opacity: 0.78;
+}
+
+#contact .row {
+  row-gap: 1.2rem;
 }
 .contact-form {
     padding: 1.5rem;

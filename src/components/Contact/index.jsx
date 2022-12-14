@@ -10,7 +10,7 @@ const Index = () => {
     <section id="contact" className="container">
       <Title underline={true}>Contact</Title>
       <p>
-        To contact me, you can fill out the form below, call my phone number,
+        To contact me, you can call my phone number,
         reach me via WhatsApp or send an e-mail.
       </p>
 

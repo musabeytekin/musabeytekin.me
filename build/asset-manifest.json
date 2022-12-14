@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.def776e7.css",
+    "main.js": "/static/js/main.c48f4988.js",
+    "static/media/hero-bg.jpg": "/static/media/hero-bg.f0dc87ff1f58bda9abef.jpg",
+    "static/media/main.png": "/static/media/main.00f697995e9e7246f2ec.png",
+    "static/media/2.png": "/static/media/2.f60e49d906f3cbc319b6.png",
+    "static/media/4.png": "/static/media/4.064fbb4b066ac9fa4af1.png",
+    "static/media/3.png": "/static/media/3.8c45106764ca43c59834.png",
+    "static/media/5.png": "/static/media/5.4a4e796498881eeea812.png",
+    "static/media/6.png": "/static/media/6.9c9fd4cd30422a53c142.png",
+    "static/media/5.jpeg": "/static/media/5.ee42c7205c8048c9d69d.jpeg",
+    "static/media/8.jpeg": "/static/media/8.f1dba6ffeb5d406b0b18.jpeg",
+    "static/media/main.jpeg": "/static/media/main.2799eb21f39351751233.jpeg",
+    "static/media/3.jpeg": "/static/media/3.b483aa6f0e50931b98ee.jpeg",
+    "static/media/2.jpeg": "/static/media/2.146aab433ab0dc431349.jpeg",
+    "static/media/7.jpeg": "/static/media/7.104a8d1eeeefeb6225bc.jpeg",
+    "static/media/profile-img.jpg": "/static/media/profile-img.1735731791601c605e29.jpg",
+    "static/media/4.jpeg": "/static/media/4.cd2241652c6b6c81314f.jpeg",
+    "static/media/6.jpeg": "/static/media/6.ddc1686c07b053562173.jpeg",
+    "static/media/1.jpeg": "/static/media/1.3fc6a87b84bed501ce92.jpeg",
+    "static/media/10.jpeg": "/static/media/10.90afeb3f32bcbc3000ca.jpeg",
+    "static/media/9.jpeg": "/static/media/9.e6ea3b564908958fa936.jpeg",
+    "index.html": "/index.html",
+    "main.def776e7.css.map": "/static/css/main.def776e7.css.map",
+    "main.c48f4988.js.map": "/static/js/main.c48f4988.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.def776e7.css",
+    "static/js/main.c48f4988.js"
+  ]
+}

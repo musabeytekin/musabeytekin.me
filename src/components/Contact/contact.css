@@ -5,17 +5,17 @@
   #contact {
   }
 }
-.info {
+/* .info {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
+  align-items: center;
   gap: 2.5rem;
   height: 100%;
   padding: 1.2rem;
   box-shadow: 0 0 2.5rem 0 rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
-}
+} */
 .info:hover {
     box-shadow: 0 0 2.5rem 0 rgba(0, 0, 0, 0.2);
 }
@@ -64,7 +64,7 @@
 }
 
 iframe {
-  width: 100%;
+  width: 40%;
   height: 100%;
   border: 0;
 }

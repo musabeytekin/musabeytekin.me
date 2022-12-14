@@ -15,9 +15,7 @@ const Index = () => {
       </p>
 
       <div className="row">
-        <div className="col-lg-5 col-sm-12">
-          <div className="info">
-            <div className="info-item">
+            <div className="info-item col-4">
               <SlLocationPin className="info-icon" />
               <div className="info-text d-flex justify-content-center align-items-left flex-column">
                 <h4>Location</h4>
@@ -25,29 +23,22 @@ const Index = () => {
                 <span>Turkey, Malatya, Battalgazi</span>
               </div>
             </div>
-            <div className="info-item">
+            <div className="info-item col-4">
               <MdEmail className="info-icon" />
               <div className="info-text d-flex justify-content-center align-items-left flex-column">
                 <h4>Email</h4>
                 <span>musabeytekin09gmail.com</span>
               </div>
             </div>
-            <div className="info-item">
+            <div className="info-item col-4">
               <FaPhoneAlt className="info-icon" />
               <div className="info-text d-flex justify-content-center align-items-left flex-column">
                 <h4>Phone</h4>
                 <span>+90 (553) 738 29 82</span>
               </div>
             </div>
-
-            <iframe src="https://maps.google.com/maps?q=44210&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-          </div>
-        </div>
-        <div className="col-lg-7 col-sm-12">
-          <div className="contact-form">
-            <ContactForm />
-          </div>
-        </div>
+       
+       
       </div>
     </section>
   );

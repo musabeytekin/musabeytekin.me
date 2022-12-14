@@ -36,7 +36,7 @@ export const projects = [
     name: "Personal Website",
     link: "https://musabeytekin.me",
     description:
-      " My own personal website. ReactJS framework has been used quite a lot. Redux toolkit was used for global states. I used MongoDB, ExpressJS, NodeJS for backend operations. There is a panel for admin operations. From this panel, the admin can reply to the messages he receives. He can view your messages in detail. He can see the number of people visiting the site. He can filter messages.",
+      " My own personal website. ReactJS framework has been used quite a lot. Redux toolkit was used for global states. ",
     mainSlide: pwsMain,
     slides: [
       {

@@ -15,7 +15,7 @@ const Index = () => {
       </p>
 
       <div className="row">
-            <div className="info-item col-4">
+            <div className="info-item col-lg-4 col-md-12">
               <SlLocationPin className="info-icon" />
               <div className="info-text d-flex justify-content-center align-items-left flex-column">
                 <h4>Location</h4>
@@ -23,14 +23,14 @@ const Index = () => {
                 <span>Turkey, Malatya, Battalgazi</span>
               </div>
             </div>
-            <div className="info-item col-4">
+            <div className="info-item col-lg-4 col-md-12">
               <MdEmail className="info-icon" />
               <div className="info-text d-flex justify-content-center align-items-left flex-column">
                 <h4>Email</h4>
                 <span>musabeytekin09gmail.com</span>
               </div>
             </div>
-            <div className="info-item col-4">
+            <div className="info-item col-lg-4 col-md-12">
               <FaPhoneAlt className="info-icon" />
               <div className="info-text d-flex justify-content-center align-items-left flex-column">
                 <h4>Phone</h4>
